@@ -13,6 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
+  font-family: 'Raleway', sans-serif;;
   font-size: 1.125em; /* 18px / 16px = 1.125 */
   line-height: 1.2222222222em; /* 22px / 18x = 1.222... */
   padding-left: 1.2222222222em;
@@ -36,6 +37,9 @@ h1 {
   padding-top: 0.343921961em; /* 11px / 18px = 0.343921961 */
 }
 
+h2 {
+  font-size: 1.25em;
+}
 p {
   /* padding-bottom: 1.2222222222em; /*from prof.KS*/
   /* padding-top: 1.2222222222em; /*decided that padding on the top is needed*/
@@ -70,9 +74,9 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
-#about #nav-abo,
-#projects #nav-pro,
-#contact #nav-con,
+#about #nav_abo,
+#projects #nav_pro,
+#contact #nav_con,
 nav a:hover,
 nav a:active,
 nav a:focus {
@@ -85,7 +89,9 @@ nav a:focus {
 */
 #secondary {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  overflow: auto;
   flex-direction: row;
 }
 article {
@@ -118,6 +124,7 @@ section {
 }
 footer {
   font-style:italic;
+  font-size: .8em;
 }
 .images {
   display: flex;
@@ -129,4 +136,28 @@ footer {
   .images li {
     flex: 1 0 18.75em;
   }
+}
+#gmail {
+  list-style-image: url("http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/128/Gmail-icon.png");
+  margin-left: 50%;
+  font-size: 5em;
+}
+#linkedin {
+  list-style-image: url("http://icons.iconarchive.com/icons/danleech/simple/128/linkedin-icon.png");
+  margin-left: 50%;
+  font-size: 5em;
+}
+#github {
+  list-style-image: url("http://icons.iconarchive.com/icons/artcore-illustrations/artcore-4/128/github-icon.png");
+  margin-left: 50%;
+  font-size: 5em;
+}
+#soundcloud {
+  list-style-image: url("http://icons.iconarchive.com/icons/danleech/simple/128/soundcloud-icon.png");
+  margin-left: 50%;
+  font-size: 5em;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #FFFFEE;
 }
